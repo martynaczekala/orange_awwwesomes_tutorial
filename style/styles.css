@@ -1,0 +1,167 @@
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 200px;
+  font-family: 'Radley', serif;
+  color: white;
+  letter-spacing: 1px;
+  display: flex; /* nadanie headerowi właściwości flexbox,
+bez tego poniższe właściwości nie będą działać */
+  flex-direction: column; /* określenie osi głównej, czyli
+osi według, której flexbox będzie układał elementy, w tym
+wypadku będzie oś pionowa */
+  justify-content: center; /* określenie jak elementy mają
+układać się wdłuż osi głównej – tutaj będą wyśrodkowane */
+  align-items: center; /* określenie jak elementy mają
+układać się wdłuż osi pobocznej, czyli poziomej */
+}
+
+header {
+  background-image: url('../img/banner.jpg');
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header .tagline {
+  font-size: 18px;
+  font-family: 'Space Mono', monospace;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+header .copyright{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color:white;
+  font-size: 10px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+nav {
+  position:fixed;
+  z-index:1;  /*zawsze na wierzchu */
+  top:0;   /*od góry */
+}
+
+.icons {
+  position:fixed;
+  z-index:1;  /*zawsze na wierzchu */
+  left:1; 
+  width: 40px;
+}
+
+ul li img {
+  width: 60px;
+}
+
+.icons-list {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Radley', serif;
+}
+
+h2 span {
+  font-size: 40px;
+  color:#FF4907;
+  font-family: 'Radley', serif;
+}
+
+h3 {
+ font-size:24px;
+ color: #FF4907;
+ font-family: 'Radley', serif;
+}
+
+a {
+  font-size:15px;
+  color:#FF4907;
+  font-family: 'Space Mono', monospace;
+}
+
+p {
+ font-size: 14px;
+ font-family: 'Space Mono', monospace;
+}
+
+ul li {
+  font-size: 15px;
+  font-family: 'Radley', serif;
+}
+
+header nav ul{
+  text-align: center;
+  font-size: 16px;
+  list-style-type: none;
+}
+header nav ul li {
+  font-family: 'Space Mono', monospace;
+  display: inline-block;
+  text-align: center;
+  padding: 18px;
+}
+
+header nav ul li a {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.author-photo {
+  position: relative;
+}
+
+.author-photo::after {
+  content: url("../img/cross.svg");
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+  left:-100px;
+  top:-50px;
+}
+
+.contact-heading {
+  position: relative;
+  font-size:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-heading::after {
+  content: url("../img/line.svg");
+  width: 800px;
+  position: absolute;
+  z-index: -1;
+  left:160px;
+  bottom:-50px;
+}
+
+.contact-tagline{
+  text-align: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
